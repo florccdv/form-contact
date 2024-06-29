@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .wrapper{
+            display: grid;
+            grid-template-columns: 40% 60%;
+            background-color: #4d426e;
+            height: 100vh;
+            align-items: center;
+            justify-items: center;
+            padding: 30px;            
+        }
+
+        .info{
+            color: white;
+        }
+
+        .formulario{
+            background-color: white;
+            padding: 20px;
+            border-radius: 15px;       
+        }
+
+        .form_twocolumns{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        .form_input{
+            width: 100%;
+            height: 30px;           
+        }
+
+        .one_column{
+            margin-top: 20px;
+        }
+
+        .comment{
+            width: 100%;
+            /* margin-top: 20px;             */
+        }
+        .boton{
+            background-color:#4d426e;
+            border: none;
+            color: white;
+            width: 120px;
+            height: 40px;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <main class="wrapper">
+        <section class="info">
+            <h1>Contac Us</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque quaerat aut quis iure quos quo, ad esse. Quia quisquam quam ea repellendus aspernatur porro voluptate quibusdam quos minus hic? Perferendis?</p>
+            <span>Info@gmail.com</span>
+            <span>(+54) 911 25082618</span>
+        </section>
+
+        <section class="formulario">
+            <h2>We'de love to hear from you!</h2>
+            <h2>Let's get in touch</h2>
+            <form action="https://submit-form.com/FoAqCA5Qh " class="form">
+                <div class="form_twocolumns">
+                    <div>
+                        <label for="">Full name</label>
+                        <input type="text" name="Full name" class="form_input">
+                    </div>
+
+                    <div>
+                        <label for="">Company</label>
+                        <input type="text" name="Company" class="form_input">
+                    </div>
+                    
+                    <div>
+                        <label for="">email</label>
+                        <input type="email" name="Email" class="form_input">
+                    </div>
+                    
+                   <div>
+                    <label for="">Phone number</label>
+                    <input type="text" name="Phone number" class="form_input">
+                   </div>                    
+                   
+                </div>
+                
+                <div class="one_column">
+                    <label for="">Adress</label>
+                    <input type="text" name="Adress" class="form_input">
+                </div>
+
+                <div>
+                    <label for="">Comment</label>
+                    <textarea name="" id="" class="comment"></textarea>
+                </div>
+                <button class="boton" type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+        
+</body>
+</html>
